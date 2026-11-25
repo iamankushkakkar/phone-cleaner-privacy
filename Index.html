@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Privacy Policy — Phone Cleaner</title>
+  <meta name="description" content="Privacy Policy for Phone Cleaner (in.structlabs.phonecleaner) by StructLabs." />
+  <style>
+    :root {
+      --bg: #040d1a;
+      --surface: #0b1729;
+      --surface-elevated: #11223b;
+      --border: #1e3556;
+      --text: #eef5ff;
+      --muted: #9eb3cf;
+      --accent: #2ee6a6;
+      --accent-secondary: #22d3ee;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Inter, Helvetica, Arial, sans-serif;
+      background: radial-gradient(circle at top right, rgba(34, 211, 238, 0.12), transparent 36%),
+                  radial-gradient(circle at top left, rgba(46, 230, 166, 0.10), transparent 34%),
+                  var(--bg);
+      color: var(--text);
+      line-height: 1.7;
+      padding: 32px 16px 64px;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+    }
+
+    header {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 20px;
+      padding: 32px 28px;
+      margin-bottom: 24px;
+    }
+
+    .badge {
+      display: inline-block;
+      font-size: 0.78rem;
+      font-weight: 700;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      color: var(--accent);
+      background: rgba(46, 230, 166, 0.12);
+      border: 1px solid rgba(46, 230, 166, 0.35);
+      padding: 4px 12px;
+      border-radius: 999px;
+      margin-bottom: 14px;
+    }
+
+    h1 {
+      font-size: clamp(1.75rem, 4vw, 2.35rem);
+      font-weight: 800;
+      letter-spacing: -0.02em;
+      margin-bottom: 10px;
+    }
+
+    .meta {
+      color: var(--muted);
+      font-size: 0.94rem;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px 20px;
+    }
+
+    .highlight {
+      margin-top: 20px;
+      background: rgba(46, 230, 166, 0.08);
+      border: 1px solid rgba(46, 230, 166, 0.3);
+      border-radius: 14px;
+      padding: 16px 18px;
+      font-size: 0.96rem;
+      color: var(--text);
+    }
+
+    .highlight strong {
+      color: var(--accent);
+    }
+
+    main {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 20px;
+      padding: 32px 28px;
+    }
+
+    section + section {
+      margin-top: 28px;
+      padding-top: 24px;
+      border-top: 1px solid var(--border);
+    }
+
+    h2 {
+      font-size: 1.2rem;
+      font-weight: 700;
+      color: var(--accent-secondary);
+      margin-bottom: 10px;
+    }
+
+    p {
+      color: var(--muted);
+      margin-bottom: 12px;
+    }
+
+    p:last-child {
+      margin-bottom: 0;
+    }
+
+    ul {
+      margin: 10px 0 12px 20px;
+      color: var(--muted);
+    }
+
+    li {
+      margin-bottom: 8px;
+    }
+
+    li strong,
+    p strong {
+      color: var(--text);
+    }
+
+    code {
+      font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+      font-size: 0.88em;
+      color: var(--accent);
+      background: var(--surface-elevated);
+      padding: 2px 6px;
+      border-radius: 6px;
+    }
+
+    a {
+      color: var(--accent);
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    footer {
+      text-align: center;
+      color: var(--muted);
+      font-size: 0.88rem;
+      margin-top: 28px;
+    }
+
+    @media (max-width: 600px) {
+      header,
+      main {
+        padding: 22px 18px;
+        border-radius: 16px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <span class="badge">Privacy Policy</span>
+      <h1>Phone Cleaner</h1>
+      <div class="meta">
+        <span><strong>Developer:</strong> StructLabs</span>
+        <span><strong>Package ID:</strong> <code>in.structlabs.phonecleaner</code></span>
+        <span><strong>Effective Date:</strong> November 25, 2026</span>
+      </div>
+      <div class="highlight">
+        <strong>100% On-Device Media Privacy:</strong> Your photos, videos, thumbnails, and Private Vault files are processed and stored strictly on your device. They are never uploaded, transmitted, or shared with our servers.
+      </div>
+    </header>
+
+    <main>
+      <section>
+        <h2>1. Overview</h2>
+        <p>
+          StructLabs ("we", "our", or "us") built the <strong>Phone Cleaner</strong> Android application
+          (<code>in.structlabs.phonecleaner</code>) as an ad-supported storage and gallery organization utility.
+          This Privacy Policy explains what permissions the app requests, how your media and preferences are handled,
+          and what data third-party advertising services may collect.
+        </p>
+      </section>
+
+      <section>
+        <h2>2. On-Device Photo &amp; Video Access</h2>
+        <p>
+          Phone Cleaner requests read access to your device gallery (<code>READ_MEDIA_IMAGES</code>,
+          <code>READ_MEDIA_VIDEO</code>, <code>READ_MEDIA_VISUAL_USER_SELECTED</code>, or
+          <code>READ_EXTERNAL_STORAGE</code> on older Android versions) strictly to:
+        </p>
+        <ul>
+          <li>Group your photos and videos by month, screenshots, videos, and large files.</li>
+          <li>Detect near-duplicate photos and blurry shots locally on your phone.</li>
+          <li>Let you swipe to keep, favorite, lock in the Private Vault, or stage unwanted files in the Review Bin.</li>
+        </ul>
+        <p>
+          All media scanning, duplicate/blur analysis, thumbnail rendering, and video playback run entirely on your device.
+          We do not collect, upload, or store copies of your photos or videos on any external server.
+        </p>
+      </section>
+
+      <section>
+        <h2>3. User-Controlled Deletion</h2>
+        <p>
+          Swiping left moves items into a local <strong>Review Bin</strong> so you can double-check before removing anything.
+          Files are only permanently deleted when you tap <strong>Delete</strong> in the Review Bin and confirm Android's
+          system deletion prompt.
+        </p>
+      </section>
+
+      <section>
+        <h2>4. Favorites &amp; Private Protected Vault</h2>
+        <ul>
+          <li>
+            <strong>Favorites:</strong> Swiping up marks items in the in-app Favorites filter and syncs favorite status
+            locally with your Android Gallery (Android 11+).
+          </li>
+          <li>
+            <strong>Private Vault Storage:</strong> Swiping down copies selected media into Phone Cleaner's private
+            app-internal storage directory on your device, keeping those files hidden from public gallery apps.
+          </li>
+          <li>
+            <strong>Password &amp; Biometric Protection:</strong> Your Vault Password/PIN is stored locally as a salted
+            SHA-256 hash. Face and Fingerprint unlock use Android's native <code>BiometricPrompt</code> API; Phone Cleaner
+            never accesses, reads, or stores your biometric data. Screenshot blocking and automatic locking protect
+            your Vault when unlocked.
+          </li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>5. Local Preferences &amp; Data Retention</h2>
+        <p>
+          Reviewed media IDs, Private Vault metadata, total space freed statistics, theme selection, and swipe settings
+          are stored privately on your device using Android's local storage (Room database and DataStore).
+        </p>
+        <p>
+          Uninstalling Phone Cleaner permanently removes all app-local data, including files stored inside the Private Vault.
+          Please restore any files you want to keep back to your gallery before uninstalling the app.
+        </p>
+      </section>
+
+      <section>
+        <h2>6. Advertising (Google AdMob)</h2>
+        <p>
+          Phone Cleaner uses the <strong>Google Mobile Ads SDK (AdMob)</strong> to display adaptive banner ads and
+          interstitial ads. While StructLabs does not directly collect personal information, Google AdMob and its
+          advertising partners may automatically collect and process device and usage signals—such as the Android
+          Advertising ID, IP address, approximate location, ad interactions, and diagnostic/crash data—to serve,
+          measure, and personalize ads and prevent fraud.
+        </p>
+        <ul>
+          <li>
+            Google Privacy Policy:
+            <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">
+              https://policies.google.com/privacy
+            </a>
+          </li>
+          <li>
+            How Google uses information from apps that use its services:
+            <a href="https://policies.google.com/technologies/ads" target="_blank" rel="noopener noreferrer">
+              https://policies.google.com/technologies/ads
+            </a>
+          </li>
+        </ul>
+        <p>
+          You can reset your Advertising ID or opt out of personalized advertising at any time through your Android device
+          settings (<strong>Settings &rarr; Google &rarr; Ads</strong>).
+        </p>
+      </section>
+
+      <section>
+        <h2>7. Children's Privacy</h2>
+        <p>
+          Phone Cleaner is not intended for children under the age of 13. We do not knowingly collect personal
+          information from children under 13.
+        </p>
+      </section>
+
+      <section>
+        <h2>8. Changes to This Privacy Policy</h2>
+        <p>
+          We may update this Privacy Policy from time to time. Any revisions will be posted on this page with an updated
+          effective date.
+        </p>
+      </section>
+
+      <section>
+        <h2>9. Contact Us</h2>
+        <p>
+          If you have any questions or requests regarding this Privacy Policy or Phone Cleaner, please contact StructLabs at:
+          <a href="mailto:iamankushkakkar@gmail.com">iamankushkakkar@gmail.com</a>
+        </p>
+      </section>
+    </main>
+
+    <footer>
+      &copy; 2026 StructLabs &middot; Phone Cleaner
+    </footer>
+  </div>
+</body>
+</html>
